@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo geral */
+body {
+  background: linear-gradient(135deg, #4a148c, #7b1fa2);
+  color: #fff;
+  padding: 20px;
+}
+
+/* Títulos */
+h2, h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffeb3b;
+}
+
+/* Botões de produtos */
+button {
+  background-color: #ff4081;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #f50057;
+}
+
+/* Lista do carrinho */
+#listaCarrinho {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0;
+}
+
+#listaCarrinho li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botão remover dentro do carrinho */
+#listaCarrinho button {
+  background-color: #ff7043;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#listaCarrinho button:hover {
+  background-color: #d84315;
+}
+
+/* Select e input */
+select, input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
+
+/* Mensagem de erro */
+#texto {
+  color: #ff5252;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Total do preço */
+#ResutadoFinalDoPreco {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  color: #c8e6c9;
+}
+
+/* Botão enviar pedido */
+#enviarPedido {
+  background-color: #4caf50;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+#enviarPedido:hover {
+  background-color: #2e7d32;
+}
