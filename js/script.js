@@ -70,7 +70,7 @@ function enviarPedidoWhatsApp() {
 
         mensagem += `\nEndereço da entrega: ${endereco}`;
 
-        let numero = "5532991150384"; // exemplo
+        let numero = "553299999-9999"; // exemplo
         let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
         window.open(url, "_blank");
     }
