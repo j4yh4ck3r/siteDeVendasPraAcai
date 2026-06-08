@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Monte seu Açaí</h2>
+    <button onclick="adicionarAoCarrinho({nome:'Açaí 300ml', preco:10})">Açaí 300ml</button>
+    <button onclick="adicionarAoCarrinho({nome:'Açaí 500ml', preco:15})">Açaí 500ml</button>
+    <button onclick="adicionarAoCarrinho({nome:'Açaí 700ml', preco:20})">Açaí 700ml</button>
+
+    <h3>Carrinho:</h3>
+    <ul id="listaCarrinho"></ul>
+    <p id="ResutadoFinalDoPreco"></p>
+
+    <label for="pagamento">Forma de pagamento:</label>
+    <select id="pagamento">
+        <option value="pix">PIX</option>
+        <option value="cartao">Cartão de crédito</option>
+        <option value="dinheiro">Dinheiro</option>
+    </select>
+
+    <label for="endereco">Endereço de entrega:</label>
+    <input id="endereco" type="text" placeholder="Digite o endereço completo">
+    <p id="texto"></p>
+
+    <br><br>
+    <button onclick="enviarPedidoWhatsApp()">Enviar pedido via WhatsApp</button>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
